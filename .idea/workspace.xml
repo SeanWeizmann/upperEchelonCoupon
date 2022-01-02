@@ -6,24 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2f5686bf-0f62-46ca-b784-17dba5316a12" name="Changes" comment="">
       <changelist_data name="https://github.com/SeanWeizmann/upperEchelonCoupon.git" email="" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/Exceptions/LoginException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Coupon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/ConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/DataBaseUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/Tester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/facade/AdminFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/facade/ClientFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/facade/CompanyFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/facade/CustomerFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/login/ClientType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/login/LoginManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/login/Tester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/tester/Tester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/utils/ArtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/utils/DataUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/ConnectionPool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
