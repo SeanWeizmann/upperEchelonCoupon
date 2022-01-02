@@ -1,8 +1,10 @@
 package coupon_project.login;
 
-import coupon_project.Exceptions.LoginException;
+import coupon_project.exceptions.LoginException;
 import coupon_project.facade.AdminFacade;
 import coupon_project.facade.ClientFacade;
+import coupon_project.facade.CompanyFacade;
+import coupon_project.facade.CustomerFacade;
 import coupon_project.utils.DataUtils;
 
 public class LoginManager {
@@ -30,14 +32,24 @@ public class LoginManager {
                 if (!adminFacade.login(email, password)) {
                     throw new LoginException("Invalid user name or password");
                 }
-                System.out.println(DataUtils.getLocalDateTime() + email + " was logged ");
+                System.out.println(DataUtils.getLocalDateTime() + " -" + email + "- was logged ");
                 return adminFacade;
+
             case COMPANY:
-                return null;
+                ClientFacade companyFacade = new CompanyFacade();
+                if (!companyFacade.login(email, password)) {
+                    throw new LoginException("Invalid user name or password");
+                }
+                System.out.println(DataUtils.getLocalDateTime() + " -" + email + "- was logged ");
+                return companyFacade;
 
-            case CUSTOMER: //->ctrl+space for see all enum values
-
-                return null;
+            case CUSTOMER:
+                ClientFacade customerFacade = new CustomerFacade();
+                if (!customerFacade.login(email, password)) {
+                    throw new LoginException("Invalid user name or password");
+                }
+                System.out.println(DataUtils.getLocalDateTime() + " -" + email + "- was logged");
+                return customerFacade;
         }
         return null;
     }

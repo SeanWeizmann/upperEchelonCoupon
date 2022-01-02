@@ -4,26 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f5686bf-0f62-46ca-b784-17dba5316a12" name="Changes" comment="">
-      <changelist_data name="https://github.com/SeanWeizmann/upperEchelonCoupon.git" email="" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/Exceptions/LoginException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Coupon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/ConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/DataBaseUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/Tester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/facade/AdminFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/facade/ClientFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/facade/CompanyFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/facade/CustomerFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/login/ClientType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/login/LoginManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/login/Tester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/tester/Tester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/utils/ArtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/utils/DataUtils.java" afterDir="false" />
+    <list default="true" id="2f5686bf-0f62-46ca-b784-17dba5316a12" name="Changes" comment="added todo">
+      <changelist_data name="Sean Weizmann" email="seanweizmann@gmail.com" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/protobuf-java-3.11.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/coupons_exterminator/DailyJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/dao/CompaniesDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/dao/CouponsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/dao/CustomersDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/dbDao/CompaniesDBDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/dbDao/CouponsDBDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/dbDao/CustomersDBDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/DataBaseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/exceptions/InvalidException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/exceptions/NoFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/exceptions/SomethingWentWrong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/program/AppRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/tester/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/tester/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/tester/TestAdminFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/tester/TestCompanyFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/tester/TestCustomerFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon_project/utils/TablePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upperEchelonCoupon.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upperEchelonCoupon1.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/Exceptions/LoginException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/exceptions/LoginException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Coupon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Coupon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/beans/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/ConnectionPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/DataBaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/DataBaseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/db_util/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/facade/AdminFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/facade/AdminFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/facade/ClientFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/facade/ClientFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/facade/CompanyFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/facade/CompanyFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/facade/CustomerFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/facade/CustomerFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/login/LoginManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/login/LoginManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/login/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/login/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/tester/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/tester/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon_project/utils/ArtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon_project/utils/ArtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/Exceptions/LoginException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/Exceptions/LoginException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/db_util/ConnectionPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/db_util/ConnectionPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/db_util/DataBaseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/db_util/DataBaseUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/db_util/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/db_util/Tester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/facade/AdminFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/facade/AdminFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/facade/ClientFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/facade/ClientFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/facade/CompanyFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/facade/CompanyFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/facade/CustomerFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/facade/CustomerFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/login/LoginManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/login/LoginManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/login/LoginManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/login/LoginManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/login/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/login/Tester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/tester/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/tester/Tester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coupon_project/utils/ArtUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coupon_project/utils/ArtUtils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +69,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="https://github.com/SeanWeizmann/upperEchelonCoupon.git" />
@@ -46,25 +95,83 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="230TauutgUnXtOT3RfhvqnjAQE0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/upperEchelonCoupon" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MTHome" />
   </component>
-  <component name="RunManager" selected="Application.Tester (1)">
+  <component name="RunManager" selected="Application.AppRunner">
+    <configuration name="AppRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coupon_project.program.AppRunner" />
+      <module name="upperEchelonCoupon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coupon_project.program.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coupon_project.Test2" />
+      <module name="upperEchelonCoupon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coupon_project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tester (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="coupon_project.login.Tester" />
       <module name="upperEchelonCoupon" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="coupon_project.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tester (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coupon_project.tester.Tester" />
+      <module name="upperEchelonCoupon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coupon_project.tester.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,8 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Tester (1)" />
+        <item itemvalue="Application.AppRunner" />
+        <item itemvalue="Application.Tester (2)" />
         <item itemvalue="Application.Tester" />
+        <item itemvalue="Application.Tester (1)" />
+        <item itemvalue="Application.Test2" />
       </list>
     </recent_temporary>
   </component>
@@ -126,6 +236,12 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added TOFO" />
+    <MESSAGE value="added todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="added todo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

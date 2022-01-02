@@ -1,6 +1,10 @@
 package coupon_project.db_util;
 
-import com.mysql.cj.protocol.Resultset;
+//import com.mysql.cj.protocol.Resultset;
+
+
+
+import java.sql.ResultSet;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -11,21 +15,21 @@ public class DataBaseUtil {
 
     private static Connection connection;
 
-    public static void runQuery(String query) throws SQLException {
+    public static void runQuery(String query){
         try {
-            //connection = ConnectionPool.getInstance().getConnection();
+            connection = ConnectionPool.getInstance().getConnection();
             PreparedStatement statement = connection.prepareStatement(query);
             statement.execute();
-        } catch (SQLException err) {
+        } catch (SQLException | InterruptedException err) {
             System.out.println(err.getMessage());
         } finally {
-            //ConnectionPool.getInstance().returnConnection(connection)
+            ConnectionPool.getInstance().returnConnection(connection);
         }
     }
 
-    public static void runQuery(String query, Map<Integer, Object> params) throws SQLException {
+    public static void runQuery(String query, Map<Integer, Object> params){
         try {
-            //connection = ConnectionPool.getInstance().getConneciton();
+            connection = ConnectionPool.getInstance().getConnection();
             PreparedStatement statement = connection.prepareStatement(query);
             params.forEach((key, value) -> {
                 try {
@@ -37,10 +41,10 @@ public class DataBaseUtil {
                         statement.setDate(key, (Date) value);
                     } else if (value instanceof Double) {
                         statement.setDouble(key, (Double) value);
-                    } else if (value instanceof Boolean){
-                        statement.setBoolean(key,(Boolean) value);
-                    } else if (value instanceof Float){
-                        statement.setFloat(key,(Float)value);
+                    } else if (value instanceof Boolean) {
+                        statement.setBoolean(key, (Boolean) value);
+                    } else if (value instanceof Float) {
+                        statement.setFloat(key, (Float) value);
                     }
                 } catch (SQLException err) {
                     System.out.println(err.getMessage());
@@ -48,23 +52,23 @@ public class DataBaseUtil {
 
             });
             statement.execute();
-        } catch (SQLException err) {
+        } catch (SQLException | InterruptedException err) {
             System.out.println(err.getMessage());
         } finally {
-            //ConnectionPool.getInstance().returnConnection(connection)
+            ConnectionPool.getInstance().returnConnection(connection);
         }
     }
 
-    public static Resultset runQueryForResult(String query) throws SQLException{
-        Resultset resultset =null;
-        try{
-            //connection = ConnectionPool.getInstance().getConnection();
+    public static ResultSet runQueryForResult(String query){
+        ResultSet resultset = null;
+        try {
+            connection = ConnectionPool.getInstance().getConnection();
             PreparedStatement statement = connection.prepareStatement(query);
-            resultset = (Resultset) statement.executeQuery();
-        } catch (SQLException err){
+            resultset = (ResultSet) statement.executeQuery();
+        } catch (SQLException | InterruptedException err) {
             System.out.println(err.getMessage());
         } finally {
-            //connection = ConnectionPool.getInstance().getConnection();
+            ConnectionPool.getInstance().returnConnection(connection);
         }
         return resultset;
     }

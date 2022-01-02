@@ -1,6 +1,7 @@
 package coupon_project.beans;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Coupon {
 
@@ -19,6 +20,20 @@ public class Coupon {
     public Coupon(int id, int companyID, Category category, String title, String description
             , LocalDate startDate, LocalDate endDate, int amount, double price, String image) {
         this.id = id;
+        this.companyID = companyID;
+        this.category = category;
+        this.title = title;
+        this.description = description;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.amount = amount;
+        this.price = price;
+        this.image = image;
+    }
+
+
+    public Coupon( int companyID, Category category, String title, String description
+            , LocalDate startDate, LocalDate endDate, int amount, double price, String image) {
         this.companyID = companyID;
         this.category = category;
         this.title = title;
@@ -117,6 +132,23 @@ public class Coupon {
                 ", amount=" + amount +
                 ", price=" + price +
                 ", image='" + image + '\'' +
-                '}';
+                '}' + "\n";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Coupon coupon = (Coupon) o;
+        return id == coupon.id && companyID == coupon.companyID && amount == coupon.amount
+                && Double.compare(coupon.price, price) == 0 && category == coupon.category
+                && Objects.equals(title, coupon.title) && Objects.equals(description, coupon.description)
+                && Objects.equals(startDate, coupon.startDate) && Objects.equals(endDate, coupon.endDate)
+                && Objects.equals(image, coupon.image);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, companyID, category, title, description, startDate, endDate, amount, price, image);
     }
 }
