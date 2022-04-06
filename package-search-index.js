@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"coupon_project.beans"},{"l":"coupon_project.dao"},{"l":"coupon_project.db_util"},{"l":"coupon_project.dbDao"},{"l":"coupon_project.Exceptions"},{"l":"coupon_project.facade"},{"l":"coupon_project.login"},{"l":"coupon_project.tester"},{"l":"coupon_project.utils"}]
